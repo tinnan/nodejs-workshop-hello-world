@@ -1,7 +1,8 @@
 const Seqeulize = require("sequelize");
 
-const db = new Seqeulize("Worlds", "postgres", "pass", {
+const db = new Seqeulize("postgres", "postgres", "pass", {
   host: "localhost",
+  port: 5432,
   dialect: "postgres",
   pool: {
     max: 5,
