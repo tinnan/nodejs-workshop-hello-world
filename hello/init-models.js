@@ -1,12 +1,12 @@
 var DataTypes = require("sequelize").DataTypes;
-var _world_dbs = require("./world_dbs");
+var _Worlds = require("./Worlds");
 
 function initModels(sequelize) {
-  var world_dbs = _world_dbs(sequelize, DataTypes);
+  var Worlds = _Worlds(sequelize, DataTypes);
 
 
   return {
-    world_dbs,
+    Worlds,
   };
 }
 module.exports = initModels;

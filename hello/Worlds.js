@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define('world_dbs', {
+  return sequelize.define('Worlds', {
     id: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
@@ -13,12 +13,12 @@ module.exports = function(sequelize, DataTypes) {
     }
   }, {
     sequelize,
-    tableName: 'world_dbs',
+    tableName: 'Worlds',
     schema: 'public',
     timestamps: true,
     indexes: [
       {
-        name: "world_dbs_pkey",
+        name: "Worlds_pkey",
         unique: true,
         fields: [
           { name: "id" },
